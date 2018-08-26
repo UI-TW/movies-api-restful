@@ -8,7 +8,7 @@ const actors = movies.reduce((acc, film) => acc.concat(film.Actors.split(',')), 
 const parseActors = actors.map(actor => actor.trim());
 const uniqueActors = [...new Set(parseActors)];  //length 156
 
-const API_KEY = '14591f24-02fe-4845-bdc7-275395e79b35';
+const API_KEY = '';
 //const uniqueActors = ['Robin Williams'];
 
 const getData = (actor) => {
