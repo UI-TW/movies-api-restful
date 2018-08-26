@@ -1,7 +1,7 @@
-import express from "express";
-import bodyParser from "body-parser";
-import compression from "compression";
-import routes from "./routes";
+const express = require("express");
+const bodyParser = require("body-parser");
+const compression = require("compression");
+const routes = require("./routes");
 
 // Initilizing express
 const app = express();

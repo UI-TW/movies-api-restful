@@ -28,13 +28,12 @@ npm run debug
 
 ### Get all movies
 
-#### - `/api/movies/all` - To get all the movies list, by default it will give 20 movies
+#### - `/api/movies/all` - To get all the movies list
 
 **Example**:
 
 ```json
 {
-  "statusCode":200,
   "data": [
   {
     "title": "Jumanji",
@@ -121,7 +120,6 @@ npm run debug
 
 ```json
 {
-  "statusCode": 200,
   "data": {
     "title": "Jumanji",
     "poster": "https://m.media-amazon.com/images/M/MV5BZTk2ZmUwYmEtNTcwZS00YmMyLWFkYjMtNTRmZDA3YWExMjc2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
@@ -160,4 +158,83 @@ npm run debug
 }
 ```
 
+### Get an actor by name
+
+#### - `/api/actors/:name` - To get an actor's information by name
+
+**Example**:
+
+```json
+{
+  "data": [
+    {
+      "bio": "Laura Lovelace is an actress and director, known for Pulp Fiction (1994), Jackie Brown (1997) and Vegetables (1989).",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BZDVhMTc0YjktODg0OS00MzBhLWIzMTMtYzE3MWZkNTUxMjg5XkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1.jpg",
+      "urlIMDB": "http://www.imdb.com/name/nm0522503",
+      "name": "Laura Lovelace",
+      "idIMDB": "nm0522503",
+      "starSign": "",
+      "starMeter": "SEE RANK",
+      "filmographies": [
+        {
+          "section": "Actress",
+          "filmography": [
+            {
+              "title": "Jackie Brown",
+              "year": " 1997",
+              "remarks": null,
+              "imdbid": "tt0119396"
+            },
+            {
+              "title": "Pulp Fiction",
+              "year": " 1994",
+              "remarks": null,
+              "imdbid": "tt0110912"
+            }
+          ]
+        },
+        {
+          "section": "Director",
+          "filmography": [
+            {
+              "title": "Vegetables",
+              "year": " 1989",
+              "remarks": [
+                "(Video)"
+              ],
+              "imdbid": "tt1959602"
+            }
+          ]
+        },
+        {
+          "section": "Music department",
+          "filmography": [
+            {
+              "title": "Pulp Fiction",
+              "year": " 1994",
+              "remarks": [
+                "(music consultant)"
+              ],
+              "imdbid": "tt0110912"
+            }
+          ]
+        },
+        {
+          "section": "Self",
+          "filmography": [
+            {
+              "title": "VH1 Goes Inside",
+              "year": " 2004",
+              "remarks": [
+                "(TV Series documentary)"
+              ],
+              "imdbid": "tt0420466"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 #### MIT License

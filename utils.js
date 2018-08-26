@@ -1,15 +1,4 @@
-import faker from "faker";
-
-export const generateNumberArray = (num = 1) => {
-  return Array.from(Array(parseInt(num)).keys());
-};
-
-export const generateActorNames = num => {
-  const nums = generateNumberArray(num);
-  return nums.map(key => faker.name.findName());
-};
-
-export const listOfGenres = [
+const listOfGenres = [
   "Science Fiction",
   "Drama",
   "Action and Adventure",
@@ -26,12 +15,8 @@ export const listOfGenres = [
   "Fantasy"
 ];
 
-export const generateRandomGenres = () => {
+const generateRandomGenres = () => {
   return listOfGenres[Math.floor(Math.random() * listOfGenres.length)];
-};
-
-export const generateRatings = (min = 5, max = 10) => {
-  return Math.floor(Math.random() * max) + min;
 };
 
 const generateGenre = (movie) => {
@@ -42,9 +27,9 @@ const generateGenre = (movie) => {
     genre = genre.split(",");
   }
   return genre;
-}
+};
 
-export const generateAllMovieData = movie => {
+const generateAllMovieData = movie => {
   let genre = generateGenre(movie);
   return {
     title: movie.Title,
@@ -60,7 +45,7 @@ export const generateAllMovieData = movie => {
   };
 };
 
-export const generateMovieData = movie => {
+const generateMovieData = movie => {
   let genre = generateGenre(movie);
   return {
     title: movie.Title,
@@ -81,4 +66,14 @@ export const generateMovieData = movie => {
     rated: movie.Rated,
     genre
   };
+};
+
+const generateNumberArray = (num = 1) => {
+  return Array.from(Array(parseInt(num)).keys());
+};
+
+module.exports = {
+  generateNumberArray,
+  generateAllMovieData,
+  generateMovieData
 };

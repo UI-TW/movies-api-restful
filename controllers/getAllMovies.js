@@ -1,11 +1,11 @@
-import allMovies from "../data/movies.json";
-import { generateActorNames, generateNumberArray, generateRandomGenres, generateAllMovieData } from "../utils";
+const allMovies = require("../data/movies.json");
+const utils = require("../utils");
 
 const getAllMovies = (count = 41) => {
-  const moviesCount = generateNumberArray(count);
-  return moviesCount.map((movieCount, index) => {
-    return generateAllMovieData(allMovies[movieCount]);
+  const moviesCount = utils.generateNumberArray(count);
+  return moviesCount.map((movieCount) => {
+    return utils.generateAllMovieData(allMovies[movieCount]);
   });
 };
 
-export default getAllMovies;
+module.exports =  getAllMovies;
