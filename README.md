@@ -174,7 +174,7 @@ npm run debug
       "name": "Laura Lovelace",
       "idIMDB": "nm0522503",
       "starSign": "",
-      "starMeter": "SEE RANK",
+      "starMeter": "66%",
       "filmographies": [
         {
           "section": "Actress",
