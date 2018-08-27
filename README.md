@@ -2,7 +2,7 @@
 
 **Restful api for movies, movie, cast etc,**
 
-## [Demo](https://rhinestone-aardwolf.glitch.me/)
+## [Demo](https://alert-carpenter.glitch.me/)
 
 ## Setup
 
