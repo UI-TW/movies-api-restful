@@ -236,5 +236,7 @@ npm run debug
     }
   ]
 }
-```
+<p align="center">
+  <img src="wireFrame/home.png">
+</p>```
 #### MIT License
