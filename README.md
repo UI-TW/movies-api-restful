@@ -236,7 +236,6 @@ npm run debug
     }
   ]
 }
-<p align="center">
-  <img src="wireFrame/home.png">
-</p>```
+```
+![alt text](https://github.com/UI-TW/movies-api-restful/blob/master/wireFrames/Home.png)
 #### MIT License
