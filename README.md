@@ -238,11 +238,13 @@ npm run debug
 }
 ```
 # Home Page
-![alt text](https://github.com/UI-TW/movies-api-restful/blob/master/wireFrames/Home.png)
+![alt text](https://github.com/UI-TW/movies-api-restful/blob/master/wireFrames/home.png)
 # Quick View
 ![alt text](https://github.com/UI-TW/movies-api-restful/blob/master/wireFrames/Quick-view.png)
 # Details page
 ![alt text](https://github.com/UI-TW/movies-api-restful/blob/master/wireFrames/details.png)
 # Discover page
 ![alt text](https://github.com/UI-TW/movies-api-restful/blob/master/wireFrames/discover.png)
+# Actor details page
+![alt text](https://github.com/UI-TW/movies-api-restful/blob/master/wireFrames/actor.png)
 #### MIT License
